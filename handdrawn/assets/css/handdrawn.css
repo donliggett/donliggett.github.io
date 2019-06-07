@@ -14,13 +14,81 @@
 
 .fade.show .modal-dialog {
   -webkit-animation-name: wiggle;
-  -ms-animation-name: wiggle;
-  -ms-animation-duration: 500ms;
   -webkit-animation-duration: 500ms;
   -webkit-animation-iteration-count: 1;
-  -ms-animation-iteration-count: 1;
   -webkit-animation-timing-function: ease-in-out;
-  -ms-animation-timing-function: ease-in-out;
+}
+
+.pagination .page-item {
+  transform: skew(1deg, 1deg);
+  margin-right: 5px;
+}
+
+.pagination .page-item:first-child {
+  transform: skew(-1deg, -1deg);
+}
+
+.pagination .page-item:last-child {
+  transform: skew(0.5deg, 0.5deg);
+}
+
+.pagination .page-link {
+  border-radius: .4rem .15rem/.1rem .3rem;
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0.3deg);
+  }
+  25% {
+    transform: rotate(-0.3deg);
+  }
+  50% {
+    transform: rotate(0.5deg);
+  }
+  75% {
+    transform: rotate(-0.1deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.form-group input {
+  padding: .535rem .75rem .375rem;
+}
+
+button {
+  padding: .535rem .75rem .375rem !important;
+}
+
+.bs-popover-top[role="tooltip"] .arrow, .bs-popover-auto[role="tooltip"][x-placement^="top"] .arrow,
+.bs-popover-bottom[role="tooltip"] .arrow,
+.bs-popover-auto[role="tooltip"][x-placement^="bottom"] .arrow {
+  transform: skew(-20deg, -1deg);
+}
+
+.bs-popover-left[role="tooltip"] .arrow, .bs-popover-auto[role="tooltip"][x-placement^="left"] .arrow,
+.bs-popover-right[role="tooltip"] .arrow,
+.bs-popover-auto[role="tooltip"][x-placement^="right"] .arrow {
+  transform: skew(0deg, -30deg);
+}
+
+.bs-tooltip-top[role="tooltip"] .arrow, .bs-tooltip-auto[role="tooltip"][x-placement^="top"] .arrow,
+.bs-tooltip-bottom[role="tooltip"] .arrow,
+.bs-tooltip-auto[role="tooltip"][x-placement^="bottom"] .arrow {
+  transform: skew(-20deg, -1deg);
+}
+
+.bs-tooltip-left[role="tooltip"] .arrow, .bs-tooltip-auto[role="tooltip"][x-placement^="left"] .arrow,
+.bs-tooltip-right[role="tooltip"] .arrow,
+.bs-tooltip-auto[role="tooltip"][x-placement^="right"] .arrow {
+  transform: skew(0deg, -30deg);
+}
+
+svg,
+img {
+  border-radius: 0.8rem 0.3rem / 0.2rem 0.6rem;
 }
 
 /*!
