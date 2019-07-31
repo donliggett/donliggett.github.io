@@ -91,6 +91,14 @@ img {
   border-radius: 0.8rem 0.3rem / 0.2rem 0.6rem;
 }
 
+.jumbotron-fluid {
+  background-image: url("../img/pencil.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
 /*!
  * Bootstrap v4.3.1 (https://getbootstrap.com/)
  * Copyright 2011-2019 The Bootstrap Authors
